@@ -1,6 +1,6 @@
 # 🦉 Shoopy-Minter
 
-Shoopy-Minter is a Rust-based mining interface for the Shoopy Treasure Hunt Game. Generates in-game assets and energy using RandomX and future-proof minting mechanisms. It connects to the Shoopy-Rig (a modified version of XMRig) to mine RandomX-based energy and tracks in-game progress in real-time.
+Shoopy-Minter is a Rust-based mining interface for the Shoopy Treasure Hunt Game. It connects to the [Shoopy-Rig](https://github.com/shoopygames/shoopy-rig) (a modified version of XMRig) to mine RandomX-based energy and tracks in-game progress in real-time.
 
 ## Features
 
