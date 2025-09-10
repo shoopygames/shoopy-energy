@@ -40,22 +40,6 @@ cargo build --release
 
 You will be prompted to enter your Shoopy Treasury address. The miner will then start and display real-time stats.
 
-## Screenshots
-
-```
-╔═════════════════════════════════════════════════════════════════╗
-║      🦉 Shoopy Treasure Hunt Miner ⛏️ — Harvesting Energy ⚡     ║
-╚═════════════════════════════════════════════════════════════════╝
-🏛️ SH77xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-🧩 RandomX | 🔌 2 | 🔥 100.00K | 🚀 1.25KH/s | 🧮 777.70KH | ⚡ 77
-🛰️⛏️🟢📡⛏️⚡⚡⛏️⚡⛏️⛏️⚡⚡⚡⛏️⚡⛏️⚡⚡⛏️⛏️⛏️⛏️⚡⛏️⛏️⛏️⛏️
-⛏️⛏️⚡⚡⚡⛏️⛏️⚡⚡⛏️⚡⛏️⛏️⚡⛏️⚡⛏️⚡⚡⚡⛏️⛏️⚡⛏️⛏️⛏️⛏️⛏️
-⛏️⚡⚡⛏️⚡⚡⛏️⚡⛏️⚡⛏️⚡⚡⛏️⚡⚡⛏️⚡⛏️⚡⛏️⚡⚡⚡⚡⚡⛏️⛏️
-⚡⛏️⚡⛏️⚡⛏️⚡⚡⛏️⛏️⛏️⚡⚡⚡⛏️⛏️⛏️⛏️⛏️⚡⚡⚡⚡⚡⚡⛏️⛏️⚡
-⚡⚡⛏️⛏️⛏️⛏️⚡⚡⚡⛏️⚡⛏️⚡⛏️⚡⛏️⚡⛏️⛏️⛏️⚡⛏️⛏️⛏️⚡⚡⛏️⛏️
-⛏️⛏️⚡⚡⛏️⛏️⛏️⚡⛏️⛏️⛏️⚡⚡⚡⛏️⛏️⛏️⚡⚡⛏️⛏️⚡⛏️⛏️⚡⛏️⚡⛏️
-```
-
 ## Contributing
 
 - Fork the repository
