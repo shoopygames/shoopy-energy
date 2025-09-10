@@ -1,6 +1,6 @@
-# 🦉 Shoopy-Minter
+# 🦉 Shoopy-Energy
 
-Shoopy-Minter is a Rust-based mining interface for the Shoopy Treasure Hunt Game. It connects to the [Shoopy-Rig](https://github.com/shoopygames/shoopy-rig) (a modified version of XMRig) to mine RandomX-based energy and tracks in-game progress in real-time.
+Shoopy-Energy is a Rust-based mining interface for the Shoopy Treasure Hunt Game. It connects to the [Shoopy-Rig](https://github.com/shoopygames/shoopy-rig) (a modified version of XMRig) to mine RandomX-based energy and tracks in-game progress in real-time.
 
 ## Features
 
@@ -20,8 +20,8 @@ Shoopy-Minter is a Rust-based mining interface for the Shoopy Treasure Hunt Game
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/shoopygames/shoopy-minter.git
-cd shoopy-minter
+git clone https://github.com/shoopygames/shoopy-energy.git
+cd shoopy-energy
 ```
 
 2. Build the project:
@@ -35,7 +35,7 @@ cargo build --release
 ## Usage
 
 ```bash
-./shoopy-minter
+./shoopy-energy
 ```
 
 You will be prompted to enter your Shoopy Treasury address. The miner will then start and display real-time stats.
@@ -48,9 +48,9 @@ You will be prompted to enter your Shoopy Treasury address. The miner will then 
 
 ## License
 
-Shoopy-Minter is licensed under MIT License. See [LICENSE](LICENSE) for details.
+Shoopy-Energy is licensed under MIT License. See [LICENSE](LICENSE) for details.
 
 ## Disclaimer
 
-Shoopy-Minter is a tool for the Shoopy Treasure Hunt Game. It is designed for educational and in-game purposes. Make sure to follow the Shoopy game rules when using this software.
+Shoopy-Energy is a tool for the Shoopy Treasure Hunt Game. It is designed for educational and in-game purposes. Make sure to follow the Shoopy game rules when using this software.
 
