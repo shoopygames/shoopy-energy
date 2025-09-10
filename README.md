@@ -30,7 +30,7 @@ cd shoopy-minter
 cargo build --release
 ```
 
-3. Download or place the Shoopy-Rig binary (`shoopy-rig` for Linux or `shoopy-rig.exe` for Windows) in the `bin/` directory.
+3. Download or place the Shoopy-Rig binary (`shoopy-rig` for Linux or `shoopy-rig.exe` for Windows) in the `miner/` directory.
 
 ## Usage
 
