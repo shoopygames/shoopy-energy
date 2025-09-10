@@ -11,7 +11,7 @@ Shoopy-Minter is a Rust-based mining interface for the Shoopy Treasure Hunt Game
   - Difficulty
   - Accepted shares
   - Total shares mined
-- Supports Shoopy Ganjdari addresses
+- Supports Shoopy Treasury addresses
 - ANSI-colored console output
 - Simple interface to start mining with a single command
 
