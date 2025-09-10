@@ -38,7 +38,7 @@ cargo build --release
 ./shoopy-minter
 ```
 
-You will be prompted to enter your Shoopy Ganjdari address. The miner will then start and display real-time stats.
+You will be prompted to enter your Shoopy Treasury address. The miner will then start and display real-time stats.
 
 ## Screenshots
 
