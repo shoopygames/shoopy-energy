@@ -8,6 +8,7 @@ edition = "2024"
 [dependencies]
 
 io = "0.0.2"
+lazy_static = "1.5.0"
 
 regex = "1.11.2"
 
@@ -15,7 +16,7 @@ regex = "1.11.2"
 winapi = { version = "0.3.9", features = ["consoleapi", "processenv", "winbase", "wincon"] }
 
 [build-dependencies]
-winres = { version = "0.1", optional = true }
+
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1"
@@ -23,7 +24,7 @@ winres = "0.1"
 
 [profile.release]
 opt-level = "z"        # optimize for size (use "s" for a bit bigger but faster)
-lto = "thin"             # enable Link Time Optimization
+lto = "fat"             # enable Link Time Optimization
 codegen-units = 1      # compile in a single unit, better optimization
 strip = true           # strip symbols (Rust 1.68+)
 panic = "abort"        # remove unwinding code
