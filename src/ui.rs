@@ -1,5 +1,5 @@
-use std::io::{Write};
-use crate::state::{DIFFICULTY, CPU_THREADS, TOTAL_HPS, ACCEPTED_SHARES, TOTAL_SHARES};
+use crate::state::{ACCEPTED_SHARES, CPU_THREADS, DIFFICULTY, TOTAL_HPS, TOTAL_SHARES};
+use std::io::Write;
 
 #[cfg(windows)]
 pub fn enable_ansi_support() {
@@ -30,12 +30,11 @@ pub fn enable_ansi_support() {}
 #[cfg(not(any(target_os = "linux", windows)))]
 pub fn enable_ansi_support() {}
 
-
 const HEAD_1: &str = "╔═════════════════════════════════════════════════════════════════╗";
 const HEAD_2: &str = concat!(
     "║      🦉 Shoopy Energy Minter ",
     env!("CARGO_PKG_VERSION"),
-    " ⛏️ — Harvesting Energy ⚡      ║"
+    " ⛏️ — Producing Energy ⚡      ║"
 );
 const HEAD_3: &str = "╚═════════════════════════════════════════════════════════════════╝";
 
@@ -49,7 +48,6 @@ pub fn login_header() -> String {
     let address = crate::address::ask_for_address_loop();
     address
 }
-
 
 pub fn print_header(address: &str) {
     // Clear screen and hide cursor
@@ -78,19 +76,28 @@ pub fn print_header(address: &str) {
 }
 
 pub fn update_header(address: &str) {
-    print!("\x1b[s"); // save cursor
-    print!("\x1b[H"); // move to top
     let diff = DIFFICULTY.with(|c| *c.borrow());
     let cpu_threads = CPU_THREADS.with(|c| *c.borrow());
     let total_hps = TOTAL_HPS.with(|c| *c.borrow());
     let accepted_shares = ACCEPTED_SHARES.with(|c| *c.borrow());
     let total_shares = TOTAL_SHARES.with(|c| *c.borrow());
+    print!("\x1b[s"); // save cursor
+    print!("\x1b[H"); // move to top
+    print!("\x1b[1;1H"); // line 5 col 1
+    print!("\x1b[2K"); // clear line
     println!("{}", &HEAD_1);
+    print!("\x1b[2;1H"); // line 5 col 1
+    print!("\x1b[2K"); // clear line
     println!("{}", &HEAD_2);
+    print!("\x1b[3;1H"); // line 5 col 1
+    print!("\x1b[2K"); // clear line
     println!("{}", &HEAD_3);
+    print!("\x1b[4;1H"); // line 5 col 1
+    print!("\x1b[2K"); // clear line
     println!("🏛️ {}", address);
     print!("\x1b[5;1H"); // line 5 col 1
     print!("\x1b[2K"); // clear line
+    
     println!(
         "🧩 {} | 🔌 {} | 🔥 {} | 🚀 {}H/s | 🧮 {}H | ⚡ {}",
         "RandomX",

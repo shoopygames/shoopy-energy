@@ -3,13 +3,9 @@ name = "shoopy-energy"
 version = "0.1.0"
 edition = "2024"
 
-
-
 [dependencies]
-
 io = "0.0.2"
 lazy_static = "1.5.0"
-
 regex = "1.11.2"
 
 [target.'cfg(windows)'.dependencies]
