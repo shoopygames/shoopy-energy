@@ -40,7 +40,7 @@ const HEAD_3: &str = "╚══════════════════�
 
 pub fn login_header() -> String {
     print!("\x1B[2J\x1B[H");
-    print!("\x1b[?25l");
+    // print!("\x1b[?25l");
     println!("{}", &HEAD_1);
     println!("{}", &HEAD_2);
     println!("{}", &HEAD_3);
@@ -52,7 +52,7 @@ pub fn login_header() -> String {
 pub fn print_header(address: &str) {
     // Clear screen and hide cursor
     print!("\x1B[2J\x1B[H");
-    print!("\x1b[?25l");
+    // print!("\x1b[?25l");
     print!("\x1b[1;1H"); // line 5 col 1
     print!("\x1b[2K"); // clear line
     print!("\x1b[2;1H"); // line 5 col 1
@@ -109,7 +109,7 @@ pub fn update_header(address: &str) {
     );
 
     print!("\x1b[u"); // restore cursor
-    print!("\x1b[?25l");
+    // print!("\x1b[?25l");
     std::io::stdout().flush().unwrap();
 }
 
