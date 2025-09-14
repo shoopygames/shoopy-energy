@@ -1,14 +1,26 @@
-mod ui;
-mod state;
+mod address;
 mod miner;
 mod parser;
-mod address;
+mod state;
+mod ui;
+
+use std::env;
+
+fn run(address: &str) {
+    ui::print_header(address);
+    miner::run_miner(address);
+}
 
 fn main() {
     ui::enable_ansi_support();
 
-    let address = ui::login_header();
-    ui::print_header(&address);
+    // Try to get the first argument, otherwise prompt user
+    let mut address = env::args().nth(1).unwrap_or_else(|| ui::login_header());
 
-    miner::run_miner(&address);
+    // Trim & validate address, fallback to login prompt if invalid
+    if address::is_valid_address(address.trim()).is_err() {
+        address = ui::login_header();
+    }
+
+    run(address.trim());
 }
