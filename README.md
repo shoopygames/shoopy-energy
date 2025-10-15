@@ -11,7 +11,7 @@ Shoopy-Energy is a Rust-based mining interface for the Shoopy Treasure Hunt Game
   - Difficulty
   - Accepted shares
   - Total shares mined
-- Supports Shoopy Treasury addresses
+- Supports Shoopy Cell addresses
 - ANSI-colored console output
 - Simple interface to start mining with a single command
 
@@ -38,7 +38,7 @@ cargo build --release
 ./shoopy-energy
 ```
 
-You will be prompted to enter your Shoopy Treasury address. The miner will then start and display real-time stats.
+You will be prompted to enter your Shoopy Cell address. The miner will then start and display real-time stats.
 
 ## Contributing
 
