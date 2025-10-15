@@ -1,19 +1,17 @@
 use std::io::{Write};
 
 pub fn is_valid_address(addr: &str) -> Result<&str, &'static str> {
-    if !addr.starts_with("SH77")
-        || addr.len() != 64
-        || !addr.chars().all(|c| c.is_ascii_alphanumeric())
+    if !addr.chars().all(|c| c.is_ascii_alphanumeric())
     {
-        return Err("Treasury Address is invalid. Please enter the correct one or create one here.\r\nhttps://shoopy.ir/");
+        return Err("Invalid Cell Address!\r\nhttps://shoopy.ir/");
     }
     Ok(addr)
 }
 
 pub fn ask_for_address_loop() -> String {
     loop {
-        println!("Please enter your Shoopy Treasury Address: ");
-        print!("🏛️ ");
+        println!("Please enter your Shoopy Cell Address: ");
+        print!("🔋 ");
         std::io::stdout().flush().unwrap();
 
         let mut input = String::new();

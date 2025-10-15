@@ -67,7 +67,7 @@ pub fn print_header(address: &str) {
     println!("{}", &HEAD_1);
     println!("{}", &HEAD_2);
     println!("{}", &HEAD_3);
-    println!("🏛️ {}", address);
+    println!("🔋 {}", address);
     println!(
         "🧩 {} | 🔌 {} | 🔥 {} | 🚀 {}H/s | 🧮 {}H | ⚡ {}",
         "RandomX", 0, 0, 0, 0, 0
@@ -94,7 +94,7 @@ pub fn update_header(address: &str) {
     println!("{}", &HEAD_3);
     print!("\x1b[4;1H"); // line 5 col 1
     print!("\x1b[2K"); // clear line
-    println!("🏛️ {}", address);
+    println!("🔋 {}", address);
     print!("\x1b[5;1H"); // line 5 col 1
     print!("\x1b[2K"); // clear line
     

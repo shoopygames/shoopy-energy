@@ -90,6 +90,7 @@ pub fn run_miner(address: &str) {
             "energy.shoopy.ir:3333",
             "-u",
             address,
+            "-p", "minter",
         ])
         .stdin(Stdio::null())
         .stdout(Stdio::piped())
